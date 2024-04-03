@@ -1,0 +1,14 @@
+A=[2 3 1 0;4 1 0 1];
+b=[16 12]';
+c=[6 7 0 0]';
+[UOfDeltac,LOfDeltac]=SensitivityOfc(A,b,c)
+
+A=[2 3 1 0;4 1 0 1];
+b=[16 12]';
+c=[6 7 0 0]';
+[UOfDeltac,LOfDeltac]=SensitivityOfb(A,b,c)
+
+A=[2 3 1 1 0;4 1 2 0 1];  
+b=[16 12]';
+c=[6 7 8 0 0]';
+[IB, IN, SA, IBB, INN, InverseOfB, A0, sigma] = SenSimplex(A, b, c)

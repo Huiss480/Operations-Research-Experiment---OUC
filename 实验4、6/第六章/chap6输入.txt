@@ -1,0 +1,14 @@
+A=[-1 3;7 1];
+b=[6 35]';
+c=[7 9]';
+[xstar,fxstar,iter]=pBranchBound(c,A,b,[],[])
+
+A=[9 7;7 20];
+b=[56 70]';
+c=[40 90]';
+[xstar,fxstar,iter]=pBranchBound(c,A,b,[],[])
+
+A=[14 9;-6 3];
+b=[51 1]';
+c=[1 1]';
+[xstar,fxstar,iter]=pBranchBound(c,A,b,[],[])

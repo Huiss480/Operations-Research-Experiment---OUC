@@ -1,0 +1,23 @@
+Supply = [5 2 3]';
+Demand = [3 2 3 2]';
+[X, b] = pNorthWest(Supply, Demand)
+
+Supply = [5 2 3]';
+Demand = [3 2 3 2]';
+Cost=[3 7 6 4;2 4 3 2;4 3 8 5];
+[X, b] = pMinimal(Cost, Supply, Demand)
+
+Supply = [5 2 3]';
+Demand = [3 2 3 2]';
+Cost=[3 7 6 4;2 4 3 2;4 3 8 5];
+[X, b] = Vogal(Cost, Supply, Demand)
+
+Supply = [5 2 3]';
+Demand = [3 2 3 2]';
+Cost=[3 7 6 4;2 4 3 2;4 3 8 5];
+[X,F]=pTransport(Cost,Supply,Demand)
+
+Supply = [30 25 21]';
+Demand = [15 17 22 12]';
+Cost=[6 2 6 7;4 9 35 3;8 8 1 5];
+[X,F]=pTransport(Cost,Supply,Demand)
